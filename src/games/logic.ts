@@ -44,41 +44,41 @@ export const calculateScore = (board: Board) => {
     scorep.push("o", "o") }
   if (board[2][2] === "x" ) {
     scorep.push("x", "x") }
-  if (board[7][5] === "o" ) {
-    scorep.push("o", "o") }
-  if (board[7][5] === "x" ) {
-      scorep.push("x", "x") }
-  if (board[0][8] === "o" ) {
-    scorep.push("o", "o") }
-  if  (board[0][8] === "x" ) {
-    scorep.push("x", "x") }
-  if (board[8][1] === "o" ) {
-    scorep.push("o", "o") }
-  if  (board[8][1] === "x" ) {
-    scorep.push("x", "x") }
-  if (board[3][5] === "o" ) {
-    scorep.push("o") }
-  if  (board[3][5] === "x" ) {
-    scorep.push("x") }
-  if (board[9][3] === "o" ) {
-    scorep.push("o") }
-  if (board[9][3] === "x" ) {
-    scorep.push("x") }
   if (board[5][7] === "o" ) {
+    scorep.push("o", "o") }
+  if (board[5][7] === "x" ) {
+      scorep.push("x", "x") }
+  if (board[8][0] === "o" ) {
+    scorep.push("o", "o") }
+  if  (board[8][0] === "x" ) {
+    scorep.push("x", "x") }
+  if (board[1][8] === "o" ) {
+    scorep.push("o", "o") }
+  if  (board[1][8] === "x" ) {
+    scorep.push("x", "x") }
+  if (board[5][3] === "o" ) {
     scorep.push("o") }
-  if  (board[5][7] === "x" ) {
+  if  (board[5][3] === "x" ) {
+    scorep.push("x") }
+  if (board[3][9] === "o" ) {
+    scorep.push("o") }
+  if (board[3][9] === "x" ) {
+    scorep.push("x") }
+  if (board[7][5] === "o" ) {
+    scorep.push("o") }
+  if  (board[7][5] === "x" ) {
     scorep.push("x") }
   if (board[8][8] === "o" ) {
     scorep.push("o") }
   if  (board[8][8] === "x" ) {
     scorep.push("x") }
-  if (board[2][9] === "o" ) {
+  if (board[9][2] === "o" ) {
     scorep.push("o") }
-  if (board[2][9] === "x" ) {
+  if (board[9][2] === "x" ) {
     scorep.push("x") }
-  if (board[5][3] === "o" ) {
+  if (board[3][5] === "o" ) {
     scorep.push("o","o","o","o") }
-  if (board[5][3] === "x" ) {
+  if (board[3][5] === "x" ) {
     scorep.push("x","x","x","x") }
   return scorep}
 
