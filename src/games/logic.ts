@@ -80,7 +80,33 @@ export const calculateScore = (board: Board) => {
     scorep.push("o","o","o","o") }
   if (board[3][5] === "x" ) {
     scorep.push("x","x","x","x") }
+  if (board[9][9] === "x" ) {
+    const index = scorep.indexOf('x')
+    if (index > -1) {
+      scorep.splice(index, 1)
+    }
+  }
+  if (board[9][9] === "o" ) {
+    const index = scorep.indexOf('o')
+    if (index > -1) {
+      scorep.splice(index, 1)
+    }
+  }
+  if (board[9][0] === "x" ) {
+    const index = scorep.indexOf('x')
+    if (index > -1) {
+      scorep.splice(index, 1)
+    }
+  }
+  if (board[9][0] === "o" ) {
+    const index = scorep.indexOf('o')
+    if (index > -1) {
+      scorep.splice(index, 1)
+    }
+  }
   return scorep}
+
+  
 
 
 export const calculateWinner = (board: Board) => {
