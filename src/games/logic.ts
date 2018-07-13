@@ -31,15 +31,7 @@ export const isValidTransition = (playerSymbol: Symbol, from: Board, to: Board) 
 }
 
 export const calculateScore = (board: Board) => {
-  //console.log(board[1][1])
-  // const arrayTreasure = [board[1][1],board[1][2]]
   const scorep = ["y"]
-  // arrayTreasure.map (x => { if (x === 'o') { scorep.push("o")}
-  // if (x === 'x') {scorep.push("x")}
-  // return scorep
-  // })}
-  // if (board[1][1] !== null 
-
   if (board[2][2] === "o" ) {
     scorep.push("o", "o") }
   if (board[2][2] === "x" ) {
@@ -114,8 +106,8 @@ export const calculateWinner = (board: Board) => {
   const result = calculateScore(board)
   const xWinner = result.filter( item => item === "x" )
   const oWinner = result.filter( item => item === "o" )
-if (xWinner.length >= 12) { return "x"}
-if (oWinner.length >= 12) { return "o"}
+if (xWinner.length >= 10) { return "x"}
+if (oWinner.length >= 10) { return "o"}
 
 }
 
