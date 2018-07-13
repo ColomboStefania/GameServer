@@ -106,8 +106,8 @@ export const calculateWinner = (board: Board) => {
   const result = calculateScore(board)
   const xWinner = result.filter( item => item === "x" )
   const oWinner = result.filter( item => item === "o" )
-if (xWinner.length >= 10) { return "x"}
-if (oWinner.length >= 10) { return "o"}
+if (xWinner.length >= 7) { return "x"}
+if (oWinner.length >= 7) { return "o"}
 
 }
 
